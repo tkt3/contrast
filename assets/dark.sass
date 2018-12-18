@@ -4,20 +4,27 @@
 @function reduce ($percent)
   @return rgba(mix(#282828, #fff), $percent / 100)
 
-body
-  margin: 0
-
 body > header, article, body > footer
   padding: 1.5em calc(26% - 4em)
 
+{% if site.darkheader %}
+
 body > header
-  color: #fff
   background: #282828
+  color: #fff
+
+{% endif %}
+
+{% if site.navigation and site.icons %}
+
+body > header
   padding-top: 1.75em
   padding-bottom: 1.75em
 
 body > header h1
-  line-height: inherit
+  margin-bottom: 0.9em
+
+{% endif %}
 
 body > footer
   color: reduce(100)
@@ -29,7 +36,7 @@ article, body > footer
 article
   background: reduce(2)
 
-.gray, .disabled
+body > footer a
   margin: -0.5em 0
 
 .archive time
