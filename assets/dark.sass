@@ -4,6 +4,8 @@
 @function reduce ($percent)
   @return rgba(mix(#282828, #fff), $percent / 100)
 
+@import anchor
+
 body > header, article, body > footer
   padding: 1.5em calc(26% - 4em)
 
@@ -35,9 +37,6 @@ article, body > footer
 
 article
   background: reduce(2)
-
-.disabled, .gray
-  margin: -0.5em 0
 
 .archive time
   color: reduce(100)
