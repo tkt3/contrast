@@ -1,7 +1,6 @@
 # Contrast
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
-
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
 
 ## Installation (recommended)
@@ -14,7 +13,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 
 You can also create an empty repo, add `index.html` and `archive.html` files, which can be empty but need to contain a front matter, and add add this to your `_config.yml`:
 
-```
+```yaml
 remote_theme: niklasbuschmann/contrast
 
 plugins:
