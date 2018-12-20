@@ -27,8 +27,8 @@
 {% assign paths = site.navigation | default: default_paths %}
 <header>
   <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% if site.navigation %}<nav>{% for path in paths %}{% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>{% endfor %}</nav>{% endif %}
-  {% if site.icons %}<nav class="icon">{% for link in site.icons %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}</nav>{% endif %}
+  {% unless site.hide_navigation %}<nav>{% for path in paths %}{% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>{% endfor %}</nav>{% endunless %}
+  {% unless site.icons.size == 0 %}<nav class="icon">{% for link in site.icons %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}</nav>{% endunless %}
 </header>
 
 {{ content }}
