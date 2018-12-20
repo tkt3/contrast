@@ -43,7 +43,7 @@ You can also embed a lot of stuff, for example from YouTube. To scale the video 
 
 ## Images
 
-![Flower](../assets/flower.jpg)
+[![Flower](../assets/flower.jpg)](../assets/flower.jpg)
 
 [Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
 
@@ -51,6 +51,6 @@ Upload an image to the *assets* folder and embed it with `![title](/assets/name.
 
 You can also emphasize your image to increase the image width:
 
-_![Swiss Alps](../assets/swiss-alps.jpg)_
+_[![Swiss Alps](../assets/swiss-alps.jpg)](../assets/swiss-alps.jpg)_
 
 [Swiss Alps](https://unsplash.com/photos/u0DmxB76uF4) by René Reichelt
