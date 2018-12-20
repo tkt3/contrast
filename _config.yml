@@ -14,6 +14,7 @@ dark_theme: false            # enables dark mode
 minimal_theme: false         # radically minimalistic theme
 darkheader: false            #
 
+
 navigation:                  # show navigation links in the header
   - index.html
   - archive.md
