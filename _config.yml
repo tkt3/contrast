@@ -9,15 +9,13 @@ excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lin
 
 # Theme settings
 show_excerpts: true          # show article previews on the home page instead of headlines
+hide_navigation: false       # recommended if you have no pages and show_excerpts disabled
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
-dark_theme: false            # enables dark mode
-minimal_theme: false         # radically minimalistic theme
-darkheader: false            #
 
-navigation:                  # show navigation links in the header
-  - index.html
-  - archive.md
-  - about.md
+# View settings
+dark_theme: false            # enables dark mode
+dark_header: false           # uses dark header whether dark_theme is enabled or not
+minimal_theme: false         # radically minimalistic theme
 
 icons:                       # show icons in the header, for all possible icons see http://fontawesome.io/icons/
   envelope: "mailto:niklasbuschmann@users.noreply.github.com"
