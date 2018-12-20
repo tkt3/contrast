@@ -25,10 +25,29 @@
 
 {% assign default_paths = site.pages | map: "name" | uniq %}
 {% assign paths = site.navigation | default: default_paths %}
+{% capture navbar %}
+<nav>
+  {% for path in paths %}
+    {% assign node = site.pages | where: "name", path | first %}
+      {% if node.title %}
+        <a href="{{ node.url | relative_url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+</nav>
+{% endcapture %}
+{% capture icons %}
+<nav class="icon">
+  {% for link in site.icons %}
+    <a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i>
+  </a>
+  {% endfor %}
+</nav>
+{% endcapture %}
+
 <header>
   <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% unless site.hide_navigation %}<nav>{% for path in paths %}{% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>{% endfor %}</nav>{% endunless %}
-  {% unless site.icons.size == 0 %}<nav class="icon">{% for link in site.icons %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}</nav>{% endunless %}
+  {% unless site.hide_navigation %}{{ navbar }}{% endunless %}
+  {% unless site.icons.size == 0 %}{{ icons }}{% endunless %}
 </header>
 
 {{ content }}
