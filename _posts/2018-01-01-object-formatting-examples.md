@@ -35,21 +35,23 @@ The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equat
 
 $$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
 
-## Embedded Content
-
-You can also embed a lot of stuff, for example from YouTube. To scale the video to 100% width use the `<div class="embed"></div>` wrapper around the iframe.
-
-<div class="embed"><iframe src="https://www.youtube.com/embed/_C0A5zX-iqM" frameborder="0" allowfullscreen></iframe></div>
-
 ## Images
+
+Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
 
 [![Flower](../assets/flower.jpg)](../assets/flower.jpg)
 
 [Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
 
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
+## Embedded Content
 
-You can also emphasize your image to increase the image width:
+You can also embed a lot of stuff, for example from YouTube. To scale the video to full width use the `<div class="embed"></div>` wrapper around the iframe.
+
+<div class="large embed"><iframe src="https://www.youtube.com/embed/_C0A5zX-iqM" frameborder="0" allowfullscreen></iframe></div>
+
+## Large Content
+
+You can use a `<div class="large"></div>` wrapper to increase the width of an image or iframe:
 
 _[![Swiss Alps](../assets/swiss-alps.jpg)](../assets/swiss-alps.jpg)_
 
