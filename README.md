@@ -2,11 +2,24 @@
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
 
-## Installation
+![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
+
+## Installation (recommended)
 
 Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
 
 *Note:* If you want to use this theme in a subfolder, then you need to create a `gh-pages` branch in your repo.
+
+## Installation (jekyll-remote-theme method)
+
+You can also create an empty repo, add `index.html` and `archive.html` files, which can be empty but need to contain a front matter, and add add this to your `_config.yml`:
+
+```
+remote_theme: niklasbuschmann/contrast
+
+plugins:
+  - jekyll-remote-theme
+```
 
 ## Features
 
@@ -33,11 +46,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 
 ## Additional Screenshots
 
-### Dark theme
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
-
-### Dark menu
+### Navigation instead of icons, dark menu
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294575-7c535980-0476-11e9-9cd3-4328264d99c7.png)
 
