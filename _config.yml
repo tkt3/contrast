@@ -12,17 +12,17 @@ show_excerpts: true          # show article previews on the home page instead of
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 dark_theme: false            # enables dark mode
 minimal_theme: false         # radically minimalistic theme
-darkheader: true             #
+darkheader: false            #
 
 navigation:                  # show navigation links in the header
   - index.html
   - archive.md
   - about.md
 
-icons:                       # show icons in the header, for all possible icons see http://fontawesome.io/icons/
-  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
-  github: "https://github.com/niklasbuschmann/contrast"
-  feed: "feed.xml"
+#icons:                       # show icons in the header, for all possible icons see http://fontawesome.io/icons/
+#  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+#  github: "https://github.com/niklasbuschmann/contrast"
+#  feed: "feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: "disqus-contrast"
