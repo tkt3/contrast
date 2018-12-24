@@ -1,6 +1,6 @@
 ---
 id: fontawesome
-svg: {"test": "example"}
+svg: {{ include_relative fontawesome.json }}
 ---
 
 {{ page.svg | jsonify }}
