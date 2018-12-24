@@ -3,4 +3,4 @@ id: fontawesome
 svg: {% include_relative fontawesome.json %}
 ---
 
-{{ page.svg.github | jsonify }}
+{{ page.svg | jsonify }}
