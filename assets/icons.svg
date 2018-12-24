@@ -5,6 +5,6 @@
 {% for link in site.icons %}
 {% assign icon = link[0] %}
 {% assign svg = site.data.fontawesome[icon].svg | first %}
-<symbol id="{{ icon }}"><path d="{{ svg[1].path }}" /></symbol>
+<symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
 {% endfor %}
 </svg>
