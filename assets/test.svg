@@ -2,4 +2,6 @@
 id: "fontawesome"
 ---
 
-{{ page | jsonify }}
+{% assign svg = {% include_relative fontawesome.json %} %}
+
+{{ svg | jsonify }}
