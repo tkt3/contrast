@@ -35,4 +35,4 @@ svg: {
 }
 ---
 
-{{ include_relative fontawesome.json }}
+{{ include_relative assets/fontawesome.json }}
