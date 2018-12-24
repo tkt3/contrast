@@ -1,0 +1,9 @@
+---
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+{% for link in site.icons %}
+{% assign svg = site.data.fontawesome[link[0]].svg | first %}
+<symbol id="{{ link[0] }}"><path d="{{ svg.path }}"></symbol>
+{% endfor %}
+</svg>
