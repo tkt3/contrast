@@ -21,9 +21,9 @@ navigation:                  # show navigation links in the header
 
 iconfolder: "//use.fontawesome.com/releases/v5.6.3/svgs/"
 icons:                       # show icons in the header, for all possible icons see http://fontawesome.io/icons/
-  solid-envelope: "mailto:niklasbuschmann@users.noreply.github.com"
-  brands-github: "https://github.com/niklasbuschmann/contrast"
-  solid-rss: "feed.xml"
+  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+  github: "https://github.com/niklasbuschmann/contrast"
+  rss: "feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: "disqus-contrast"
