@@ -4,7 +4,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 {% for link in site.icons %}
 {% assign icon = link[0] %}
-{% assign svg = site.data.fontawesome[icon] %}
+{% assign svg = site.data.fontawesome[icon].svg | first %}
 <symbol id="{{ icon }}"><path d="{{ svg | jsonify }}" /></symbol>
 {% endfor %}
 </svg>
