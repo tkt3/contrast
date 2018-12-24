@@ -24,6 +24,7 @@ plugins:
 
  - supports dark mode in macOS Mojave
  - MathJax support
+ - no external ressources
  - included archive page
  - supports pagination
  - feed generation
