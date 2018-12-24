@@ -27,7 +27,7 @@ If you have `show_excerpts` enabled, then this is the first paragraph that is on
 
 ### Single line
 
-> I hear and I forget. I see and I remember. I do and I understand. - _Confucius_
+> My mom always said life was like a box of chocolates. You never know what you're gonna get.
 
 ### Multiline
 
