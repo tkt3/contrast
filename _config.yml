@@ -19,11 +19,10 @@ navigation:                  # show navigation links in the header
   - archive.md	
   - about.md
 
-iconfolder: "//use.fontawesome.com/releases/v5.6.3/svgs/"
 icons:                       # show icons in the header, for all possible icons see http://fontawesome.io/icons/
   envelope: "mailto:niklasbuschmann@users.noreply.github.com"
   github: "https://github.com/niklasbuschmann/contrast"
-  rss: "feed.xml"
+  rss: "/contrast/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: "disqus-contrast"
