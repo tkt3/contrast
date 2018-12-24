@@ -1,5 +1,5 @@
 ---
-id: fontawesome
+id: "fontawesome"
 svg: {% include_relative fontawesome.json %}
 ---
 
