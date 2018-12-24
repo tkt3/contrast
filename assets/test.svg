@@ -35,4 +35,4 @@ svg: {
 }
 ---
 
-{{ page.svg | jsonify }}
+{{ include_relative fontawesome.json }}
