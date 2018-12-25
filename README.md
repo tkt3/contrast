@@ -11,7 +11,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 
 ## Installation (jekyll-remote-theme method)
 
-You can also create an empty repo, add `index.html` and `archive.html` files, which can be empty but need to contain a front matter, and add add this to your `_config.yml`:
+You can also create an empty repo, add `index.html` and `archive.html` files, which can be empty but need to contain front matter, and add this to your `_config.yml`:
 
 ```yaml
 remote_theme: niklasbuschmann/contrast
