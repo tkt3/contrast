@@ -1,8 +1,8 @@
 ---
-id: "fontawesome"
-test: {% include_relative test.json %}
+id: "test"
 ---
-
+{% capture test %}
 {% include_relative test.json %}
+{% endcapture %}
 
-{{ page | jsonify }}
+{{ test }}
