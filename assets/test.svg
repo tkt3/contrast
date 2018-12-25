@@ -2,7 +2,7 @@
 id: "test"
 ---
 {% capture test %}
-{% include_relative test.json %}
+{% include_relative {{page.id}}.json %}
 {% endcapture %}
 
 {{ test }}
