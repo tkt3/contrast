@@ -1,8 +1,0 @@
----
-id: "test"
----
-{% capture test %}
-{% include_relative {{page.id}}.json %}
-{% endcapture %}
-
-{{ test }}
