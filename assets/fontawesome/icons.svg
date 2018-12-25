@@ -1,0 +1,9 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+{% for link in site.icons %}
+  {% capture svg %}{% include_relative svgs/{{ link[0] }}.svg %}{% endcapture %}
+  <symbol id="{{ link[0] }}" {{ svg | remove '<svg xmlns="http://www.w3.org/2000/svg"' | remove '</svg>"' }}</symbol>
+{% endfor %}
+</svg>
