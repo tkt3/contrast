@@ -11,16 +11,14 @@ button, input
   border: none
   padding: 0
   border-radius: 2px
-  transition: color .2s
+  transition: opacity .2s
+  opacity: .6
 
-button.gray, button:hover
-  color: reduce(100)
-
-button.gray:hover
-  color: inherit
+button:hover, input:focus
+  opacity: 1
 
 input.fancy, button.fancy
-  color: inherit
+  opacity: 1
   background: reduce(8)
 
 input.fancy
