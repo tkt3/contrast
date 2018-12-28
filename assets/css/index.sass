@@ -46,6 +46,7 @@ article header h1
 article footer
   padding: 1em 0
 
+{% unless site.hide_title %}
 {% if site.navigation and site.icons %}
 
 nav
@@ -62,3 +63,4 @@ body > header h1
   font-size: 1.7em
 
 {% endif %}
+{% endunless %}
