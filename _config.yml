@@ -1,14 +1,16 @@
-title: ""
+title: "Ted K Turesky"
 author: ""
-description: ""
+description: "At Boston Children's Hospital"
 
 # Jekyll settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
-paginate: 2                  # number of articles per page, remove to disable pagination
+paginate: 5                  # number of articles per page, remove to disable pagination
+paginate_path: "/blog/page:num/"
 excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
 
 # Page settings
 show_excerpts: true          # show article previews on the home page instead of headlines
+excerpt_separator: <!--more--> # place this in posts where you want it to cut off
 hide_title: false            # remove site heading in the header
 post_footer: true            # show previous and next links at the end of each post
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
@@ -16,17 +18,17 @@ date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 # Theme settings
 dark_theme: false            # enables dark mode
 dark_header: false           # uses dark header whether dark_theme is enabled or not
-minimal_theme: false         # radically minimalistic theme
+minimal_theme: true         # radically minimalistic theme
 
 navigation:                  # (optional) site navigation in the header
-  - index.html
-  - archive.md
-  - about.md
+#  - index.html
+#  - archive.md
+#  - about.md
 
 icons:                       # (optional) fontawesome icons in the header
-  envelope: "mailto:"
-  github: "https://github.com"
-  rss: "/feed.xml"
+  envelope: "mailto:theodore.turesky@childrens.harvard.edu"
+  github: "https://github.com/tkt"
+#  rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""
